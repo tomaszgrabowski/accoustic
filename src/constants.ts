@@ -1,3 +1,7 @@
-export const HOME = '/';
-export const ABOUT_ME = '/aboutme';
-export const ARTICLE = '/article';
+export const APP_NAME = 'Accoustic Home Work';
+
+export const ROUTES = {
+    HOME: '/',
+    ABOUT_ME: '/aboutme',
+    ARTICLE: '/article'
+};
