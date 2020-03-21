@@ -1,4 +1,5 @@
 import React from 'react';
+import Section from '../components/Section';
 import WithLoading from '../components/WithLoading';
 import { BASE_URL } from '../constants';
 import { IApiResponse } from '../models/IApiResponse';
@@ -9,13 +10,12 @@ interface IProps {
 
 const Article = ( props: IProps ) => {
     return (
-        <span>
+        <>
             { props.article &&
             <article>
               <header>{ props.article.elements.heading.value }</header>
               <time>{ props.article.elements.date.value }</time>
-              <main>{ props.article.elements.body.values.map( value => <span
-                  dangerouslySetInnerHTML={ { __html: value } }/> ) }</main>
+                { props.article.elements.body.values.map( value => <Section key={ Math.random() } data={ value }/> ) }
               <footer>{ props.article.elements.author.value }</footer>
               <aside>
                 <figure>
@@ -27,7 +27,7 @@ const Article = ( props: IProps ) => {
               }
             </article>
             }
-        </span>
+        </>
     );
 };
 

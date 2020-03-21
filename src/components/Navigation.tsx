@@ -1,13 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ROUTES } from '../constants';
+import './Navigation.css';
 
 const Navigation = () => {
     return (
-        <nav>
-            <NavLink to={ ROUTES.HOME }>Główna</NavLink>
-            <NavLink to={ ROUTES.ARTICLE }>Zadanie</NavLink>
-            <NavLink to={ ROUTES.ABOUT_ME }>O mnie</NavLink>
+        <nav className='nav'>
+            <NavLink className='link' activeClassName='link-active' to={ ROUTES.HOME }>Główna</NavLink>
+            <NavLink className='link' activeClassName='link-active' to={ ROUTES.ARTICLE }>Zadanie</NavLink>
+            <NavLink className='link' activeClassName='link-active' to={ ROUTES.ABOUT_ME }>O mnie</NavLink>
         </nav>
     );
 };
