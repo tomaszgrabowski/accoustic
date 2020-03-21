@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
+import { APP_NAME, ROUTES } from './constants';
 import AboutMePage from './pages/AboutMePage';
 import ArticlePage from './pages/ArticlePage';
 import HomePage from './pages/HomePage';
-import Header from './components/Header';
-import { APP_NAME, ROUTES } from './constants';
 
 const Routes = () => {
     return (
