@@ -1,8 +1,9 @@
 import React from 'react';
-import Section from '../components/Section';
-import WithLoading from '../components/WithLoading';
-import { BASE_URL } from '../constants';
-import { IApiResponse } from '../models/IApiResponse';
+import { BASE_URL } from '../../constants';
+import { IApiResponse } from '../../models/IApiResponse';
+import Section from '../Section/Section';
+import WithLoading from '../WithLoading/WithLoading';
+import './Article.css';
 
 interface IProps {
     article: IApiResponse | undefined
@@ -13,7 +14,11 @@ const Article = ( props: IProps ) => {
         <>
             { props.article &&
             <article>
-              <header>{ props.article.elements.heading.value }</header>
+              <header>
+                <h2>
+                    { props.article.elements.heading.value }
+                </h2>
+              </header>
               <time>{ props.article.elements.date.value }</time>
                 { props.article.elements.body.values.map( value => <Section key={ Math.random() } data={ value }/> ) }
               <footer>{ props.article.elements.author.value }</footer>

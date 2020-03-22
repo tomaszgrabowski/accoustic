@@ -1,30 +1,30 @@
 import React, { useEffect, useState } from 'react';
-import Article from '../components/Article';
+import Article from '../components/Article/Article';
 import { ArticleContext } from '../contexts/ArticleContext';
 import { IApiResponse } from '../models/IApiResponse';
 import { getArticleByGuid } from '../services/data-service';
 
 const ArticlePage = () => {
     const [article, setArticle] = useState<IApiResponse>();
-    const [loading, setLoading] = useState<boolean>(false);
-    const [error, setError] = useState<boolean>(false);
+    const [loading, setLoading] = useState<boolean>( false );
+    const [error, setError] = useState<boolean>( false );
     
     useEffect( () => {
-        setLoading(true);
+        setLoading( true );
         getArticleByGuid()
             .then( ( response: IApiResponse ) => {
                 setArticle( response );
-                setLoading(false);
+                setLoading( false );
             } )
             .catch( err => {
                 setError( err );
-                setLoading(false);
+                setLoading( false );
             } );
     }, [] );
     
     return (
         <ArticleContext.Provider value={ article }>
-            <Article loading={loading} article={article} error={error}/>
+            <Article loading={ loading } article={ article } error={ error }/>
         </ArticleContext.Provider>
     );
 };
