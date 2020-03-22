@@ -1,18 +1,15 @@
 import React from 'react';
-import Navigation from '../Navigation/Navigation';
+import { HeaderSize } from '../../models/Types';
 import './Header.css';
 
 interface IProps {
-    appName: string;
+    value: string;
+    headerSize: HeaderSize;
+    className?: string;
 }
 
 const Header = ( props: IProps ) => {
-    return (
-        <header>
-            <h1>{ props.appName }</h1>
-            <Navigation/>
-        </header>
-    );
+    return React.createElement( `h${ props.headerSize }`, {class: props.className}, props.value );
 };
 
 export default Header;
