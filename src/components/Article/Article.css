@@ -2,10 +2,8 @@ article{
     border: 1px solid silver;
 
 }
-article header{
+article div{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 5rem;
-    background-color: silver;
+    flex-direction: row;
+    justify-content: normal;
 }

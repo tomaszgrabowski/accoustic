@@ -17,10 +17,12 @@ const Article = ( props: IProps ) => {
             { props.article &&
             <article>
               <Header value={ props.article.elements.heading.value } headerSize={ 2 } className={ 'article-header' }/>
-              <ArticleBody data={ props.article.elements.body.values }/>
-              <AsideImage
-                caption={ props.article.elements.mainImage.value.leadImageCaption.value }
-                url={ props.article.elements.mainImage.value.leadImage.url }/>
+              <div>
+                <ArticleBody data={ props.article.elements.body.values }/>
+                <AsideImage
+                  caption={ props.article.elements.mainImage.value.leadImageCaption.value }
+                  url={ props.article.elements.mainImage.value.leadImage.url }/>
+              </div>
               <Footer author={ props.article.elements.author.value } date={ props.article.elements.date.value }/>
             </article>
             }

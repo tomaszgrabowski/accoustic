@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from '../components/Section/Section';
+import './ArticleBody.css'
 
 interface IProps {
     data: string[]

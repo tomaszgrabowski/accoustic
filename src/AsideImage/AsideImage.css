@@ -1,0 +1,14 @@
+aside {
+    flex: 1;
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+}
