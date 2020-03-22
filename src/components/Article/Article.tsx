@@ -1,9 +1,9 @@
 import React from 'react';
+import ArticleBody from '../ArticleBody/ArticleBody';
+import AsideImage from '../AsideImage/AsideImage';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import { IApiResponse } from '../../models/IApiResponse';
-import ArticleBody from '../ArticleBody/ArticleBody';
-import AsideImage from '../AsideImage/AsideImage';
 import WithLoading from '../WithLoading/WithLoading';
 import './Article.css';
 
