@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
 import { BASE_URL } from '../../constants';
 import { IApiResponse } from '../../models/IApiResponse';
 import Section from '../Section/Section';
@@ -14,9 +15,10 @@ const Article = ( props: IProps ) => {
         <>
             { props.article &&
             <article>
+              <Header value={props.article.elements.heading.value} headerSize={2}/>
               <header>
                 <h2>
-                    { props.article.elements.heading.value }
+                    {  }
                 </h2>
               </header>
               <time>{ props.article.elements.date.value }</time>
