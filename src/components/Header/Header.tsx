@@ -10,7 +10,7 @@ interface IProps {
 
 const Header = ( props: IProps ) => {
     const headerTag = React.createElement( `h${ props.headerSize }`, {}, props.value );
-    return React.createElement( `header`, { class: props.className }, headerTag );
+    return React.createElement( `header`, { className: props.className }, headerTag );
 };
 
 export default Header;
