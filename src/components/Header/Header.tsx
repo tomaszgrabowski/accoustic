@@ -1,11 +1,11 @@
 import React from 'react';
-import { HeaderSize } from '../../models/Types';
+import { HeaderSize, HeaderType } from '../../models/Types';
 import './Header.css';
 
 interface IProps {
     value: string;
     headerSize: HeaderSize;
-    className?: string;
+    className?: HeaderType;
 }
 
 const Header = ( props: IProps ) => {
