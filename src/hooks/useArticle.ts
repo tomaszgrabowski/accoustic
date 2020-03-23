@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from 'react';
+import React, { useReducer } from 'react';
 import { IApiResponse } from '../models/IApiResponse';
 import { ActionType, articleReducer, articleReducerInitialState } from '../reducers/article.reducer';
 import { getArticleByGuid } from '../services/data-service';
@@ -6,7 +6,7 @@ import { getArticleByGuid } from '../services/data-service';
 export const useArticle = () => {
     const [state, dispatch] = useReducer( articleReducer, articleReducerInitialState );
     
-    useEffect( () => {
+    React.useEffect( () => {
         dispatch( { type: ActionType.SET_LOADING } );
         getArticleByGuid()
             .then( ( response: IApiResponse ) => {
@@ -17,5 +17,5 @@ export const useArticle = () => {
             } );
     }, [] );
     
-    return state;
+    return { state, dispatch };
 };
