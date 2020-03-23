@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Navigation from './components/Navigation/Navigation';
 import { APP_NAME, ROUTES } from './constants';
-import AboutMePage from './pages/AboutMePage';
-import ArticlePage from './pages/ArticlePage';
-import HomePage from './pages/HomePage';
+import AboutMePage from './pages/AboutMePage/AboutMePage';
+import ArticlePage from './pages/ArticlePage/ArticlePage';
+import HomePage from './pages/HomePage/HomePage';
 
 const Routes = () => {
     return (

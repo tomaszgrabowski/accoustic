@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AsideImage given AsideImage component when render then renders properly 1`] = `
+<aside>
+  <figure>
+    <img
+      alt="caption"
+      src="https://my12.content-cms.comurl"
+    />
+    <figcaption>
+      caption
+    </figcaption>
+  </figure>
+</aside>
+`;

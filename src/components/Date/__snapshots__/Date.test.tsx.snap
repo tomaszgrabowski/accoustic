@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Date given Date component when render then renders properly 1`] = `
+<small>
+  02-23-2012 00:23
+</small>
+`;

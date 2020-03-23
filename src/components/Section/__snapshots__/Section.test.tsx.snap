@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section given Section component when render then renders properly 1`] = `
+<section
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "test",
+    }
+  }
+/>
+`;

@@ -8,7 +8,7 @@ interface IProps {
 const WithLoading =
     <P extends object> ( Component: React.ComponentType<P> ): FC<P & IProps> =>
         ( { loading, error, ...props } ) => (
-            <div>
+            <>
                 {
                     error ?
                         <div>Błąd ładowania...</div>
@@ -18,7 +18,7 @@ const WithLoading =
                             :
                             <Component { ...props as P } />
                 }
-            </div>
+            </>
         
         );
 

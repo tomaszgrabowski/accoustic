@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer given Footer component when render then renders properly 1`] = `
+<footer>
+  <span>
+    author
+  </span>
+  <small>
+    02-23-2012 00:23
+  </small>
+</footer>
+`;

@@ -1,5 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
+import renderer from 'react-test-renderer';
 import { HeaderType } from '../../models/Types';
 import Header from './Header';
 
@@ -18,5 +19,10 @@ describe( 'Header', () => {
         const className: HeaderType = 'article-header';
         const wrapper = shallow( <Header headerSize={ headerSize } value={ value } className={ className }/> );
         expect( wrapper.is( '.article-header' ) ).toBeTruthy();
+    } );
+    
+    test( 'given Header component when render then renders properly', () => {
+        const wrapper = renderer.create( <Header headerSize={ 2 } value={ 'header' }/> ).toJSON();
+        expect( wrapper ).toMatchSnapshot();
     } );
 } );

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header given Header component when render then renders properly 1`] = `
+<header>
+  <h2>
+    header
+  </h2>
+</header>
+`;

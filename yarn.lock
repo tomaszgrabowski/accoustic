@@ -1319,6 +1319,13 @@
   dependencies:
     "@types/enzyme" "*"
 
+"@types/enzyme-to-json@^1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@types/enzyme-to-json/-/enzyme-to-json-1.5.3.tgz#9ccd609669011bade7be255f19b607b30b1c1a3b"
+  integrity sha512-9l4dj6CbZGlzdMMDdfXfKRg8oKPmRRgN8eN8Ggf0BzN7lg1Bg+4SwolIi1sdM9eIu2atJU2osmQADMa9FJgZLA==
+  dependencies:
+    "@types/enzyme" "*"
+
 "@types/enzyme@*", "@types/enzyme@^3.10.5":
   version "3.10.5"
   resolved "https://registry.yarnpkg.com/@types/enzyme/-/enzyme-3.10.5.tgz#fe7eeba3550369eed20e7fb565bfb74eec44f1f0"
@@ -1440,6 +1447,13 @@
   integrity sha512-PZtnBuyfL07sqCJvGg3z+0+kt6fobc/xmle08jBiezLS8FrmGeiGkJnuxL/8Zgy9L83ypUhniV5atZn/L8n9MQ==
   dependencies:
     "@types/history" "*"
+    "@types/react" "*"
+
+"@types/react-test-renderer@^16.9.2":
+  version "16.9.2"
+  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-16.9.2.tgz#e1c408831e8183e5ad748fdece02214a7c2ab6c5"
+  integrity sha512-4eJr1JFLIAlWhzDkBCkhrOIWOvOxcCAfQh+jiKg7l/nNZcCIL2MHl2dZhogIFKyHzedVWHaVP1Yydq/Ruu4agw==
+  dependencies:
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^16.9.0":
@@ -8775,7 +8789,7 @@ react-scripts@3.4.0:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-test-renderer@^16.0.0-0:
+react-test-renderer@^16.0.0-0, react-test-renderer@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.13.1.tgz#de25ea358d9012606de51e012d9742e7f0deabc1"
   integrity sha512-Sn2VRyOK2YJJldOqoh8Tn/lWQ+ZiKhyZTPtaO0Q6yNj+QDbmRkVFap6pZPy3YQk8DScRDfyqm/KxKYP9gCMRiQ==

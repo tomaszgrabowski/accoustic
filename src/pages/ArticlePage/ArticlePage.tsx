@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Article from '../components/Article/Article';
-import { ArticleContext } from '../contexts/ArticleContext';
-import { IApiResponse } from '../models/IApiResponse';
-import { getArticleByGuid } from '../services/data-service';
+import Article from '../../components/Article/Article';
+import { ArticleContext } from '../../contexts/ArticleContext';
+import { IApiResponse } from '../../models/IApiResponse';
+import { getArticleByGuid } from '../../services/data-service';
 
 const ArticlePage = () => {
     const [article, setArticle] = useState<IApiResponse>();

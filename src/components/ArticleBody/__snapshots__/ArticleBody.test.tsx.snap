@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleBody given ArticleBody component when render then renders properly 1`] = `
+<main>
+  <section
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "a",
+      }
+    }
+  />
+  <section
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "b",
+      }
+    }
+  />
+  <section
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "c",
+      }
+    }
+  />
+</main>
+`;
