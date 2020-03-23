@@ -1,31 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useReducer } from 'react';
 import Article from '../../components/Article/Article';
-import { ArticleContext } from '../../contexts/ArticleContext';
 import { IApiResponse } from '../../models/IApiResponse';
+import { ActionType, articleReducer, articleReducerInitialState } from '../../reducers/article.reducer';
 import { getArticleByGuid } from '../../services/data-service';
 
 const ArticlePage = () => {
-    const [article, setArticle] = useState<IApiResponse>();
-    const [loading, setLoading] = useState<boolean>( false );
-    const [error, setError] = useState<boolean>( false );
+    const [state, dispatch] = useReducer( articleReducer, articleReducerInitialState );
     
     useEffect( () => {
-        setLoading( true );
+        dispatch( { type: ActionType.SET_LOADING } );
         getArticleByGuid()
             .then( ( response: IApiResponse ) => {
-                setArticle( response );
-                setLoading( false );
+                dispatch( { type: ActionType.SET_ARTICLE, payload: response } );
             } )
             .catch( err => {
-                setError( err );
-                setLoading( false );
+                dispatch( { type: ActionType.SET_ERROR } );
             } );
     }, [] );
     
     return (
-        <ArticleContext.Provider value={ article }>
-            <Article loading={ loading } article={ article } error={ error }/>
-        </ArticleContext.Provider>
+        <Article loading={ state.loading } article={ state.article } error={ state.error }/>
     );
 };
 
