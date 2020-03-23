@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticlePage given data when render then show section 1`] = `
+<article>
+  <header
+    className="article-header"
+  >
+    <h2>
+      Staffordshire Terrier Pups
+    </h2>
+  </header>
+  <div>
+    <main>
+      <section
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+",
+          }
+        }
+      />
+      <section
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+",
+          }
+        }
+      />
+      <section
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+",
+          }
+        }
+      />
+      <section
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+",
+          }
+        }
+      />
+    </main>
+    <aside>
+      <figure>
+        <img
+          alt="Staffordshire Terrier Pups"
+          src="https://my12.content-cms.com/859f2008-a40a-4b92-afd0-24bb44d10124/dxresources/9349/93493572-ea5b-4c27-89cf-8a5c3ee617ad.jpg"
+        />
+        <figcaption>
+          Staffordshire Terrier Pups
+        </figcaption>
+      </figure>
+    </aside>
+  </div>
+  <footer>
+    <span>
+      Gabe Bravo
+    </span>
+    <small>
+      13-00-2019 18:00
+    </small>
+  </footer>
+</article>
+`;

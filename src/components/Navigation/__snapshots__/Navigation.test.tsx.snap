@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`given Footer component when render then renders properly 1`] = `
+<nav
+  className="nav"
+>
+  <a
+    aria-current="page"
+    className="link link-active"
+    href="/"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    Home
+  </a>
+  <a
+    aria-current={null}
+    className="link"
+    href="/article"
+    onClick={[Function]}
+  >
+    Task
+  </a>
+  <a
+    aria-current={null}
+    className="link"
+    href="/aboutme"
+    onClick={[Function]}
+  >
+    About me
+  </a>
+</nav>
+`;

@@ -6,9 +6,9 @@ import './Navigation.css';
 const Navigation = () => {
     return (
         <nav className='nav'>
-            <NavLink className='link' activeClassName='link-active' to={ ROUTES.HOME }>Główna</NavLink>
-            <NavLink className='link' activeClassName='link-active' to={ ROUTES.ARTICLE }>Zadanie</NavLink>
-            <NavLink className='link' activeClassName='link-active' to={ ROUTES.ABOUT_ME }>O mnie</NavLink>
+            <NavLink className='link' activeClassName='link-active' to={ ROUTES.HOME }>Home</NavLink>
+            <NavLink className='link' activeClassName='link-active' to={ ROUTES.ARTICLE }>Task</NavLink>
+            <NavLink className='link' activeClassName='link-active' to={ ROUTES.ABOUT_ME }>About me</NavLink>
         </nav>
     );
 };
