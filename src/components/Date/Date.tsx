@@ -1,9 +1,10 @@
 import dayjs from 'dayjs';
 import React from 'react';
+import { DateFormat } from '../../models/Types';
 
 interface IProps {
     date: string;
-    format: string;
+    format: DateFormat;
 }
 
 const Date = ( props: IProps ) => {

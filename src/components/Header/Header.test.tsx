@@ -3,8 +3,8 @@ import React from 'react';
 import { HeaderType } from '../../models/Types';
 import Header from './Header';
 
-describe( 'Section', () => {
-    test( 'given header size and value when render then show header', () => {
+describe( 'Header', () => {
+    test( 'given size and value when render then show header', () => {
         const value = `test`;
         const headerSize = 1;
         const wrapper = shallow( <Header headerSize={ headerSize } value={ value }/> );
@@ -14,7 +14,7 @@ describe( 'Section', () => {
     } );
     test( 'given className when render then show header with className', () => {
         const value = `test`;
-        const headerSize = 1;
+        const headerSize = 5;
         const className: HeaderType = 'article-header';
         const wrapper = shallow( <Header headerSize={ headerSize } value={ value } className={ className }/> );
         expect( wrapper.is( '.article-header' ) ).toBeTruthy();

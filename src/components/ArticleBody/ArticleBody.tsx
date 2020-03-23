@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../Section/Section';
-import './ArticleBody.css'
+import './ArticleBody.css';
 
 interface IProps {
     data: string[]
@@ -9,7 +9,7 @@ interface IProps {
 const ArticleBody = ( props: IProps ) => {
     return (
         <main>
-            { props.data.map( value => <Section key={ Math.random() } data={ value }/> ) }
+            { props.data.length > 0 && props.data.map( value => <Section key={ Math.random() } data={ value }/> ) }
         </main>
     );
 };

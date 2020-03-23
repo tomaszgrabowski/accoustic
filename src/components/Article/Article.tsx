@@ -11,7 +11,7 @@ interface IProps {
     article: IApiResponse | undefined
 }
 
-const Article = ( props: IProps ) => {
+export const Article = ( props: IProps ) => {
     return (
         <>
             { props.article &&
