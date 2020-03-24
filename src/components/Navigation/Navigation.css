@@ -13,22 +13,6 @@ nav {
     height: 1.8rem;
 }
 
-.link::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    content: '';
-}
-
-.link:hover {
-
-}
-
-.link:hover::after {
-    top: 20px;
-    border-bottom: 2px solid red;
+.link-active{
+    border-bottom: 3px solid #333;
 }
